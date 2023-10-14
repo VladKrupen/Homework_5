@@ -84,13 +84,11 @@ class ViewController: UIViewController {
         
 // 4. Циклический вызов функций - поломать приложение
         
-        func factorial(_ num: Int) -> Int {
-            if num == 0 {
-                return 1
-            }
-            return num * factorial(num - 1)
+        func crash(_ num: Int) -> Int {
+            
+            return num * crash(num)
         }
-        print(factorial(7))
+        print(crash(9))
         
         
 // 5. Функция возведения в степень с дефолтным параметром
